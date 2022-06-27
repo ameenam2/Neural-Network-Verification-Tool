@@ -10,12 +10,18 @@ Deep Neural Networks are vulnerable to **adversarial perturbations/examples** wh
 
 ## Installation Instructions for MAC OS
 To build Marabou on MAC OS Terminal, Download [CMAKE](https://cmake.org/download/) 3.12 or later.
-Then, follow the following commands
+Then, use the following commands
 ```
 git clone https://github.com/NeuralNetworkVerification/Marabou.git
-cd 
- 
+cd path/to/marabou/repo/folder
+mkdir build
+cd build
+brew install boost
+cmake ..
+cmake --build .
 ```
+It is to be noted that a difference in CPU architecture or recent MAC OS may impact the building process. It may generate errors as shown below such as .
+This issuse can be resolved by following the the directions detailed [here](https://github.com/NeuralNetworkVerification/Marabou/issues/570).
 ## Structure of Marabou 
 
 ## Command Interface of Marabou
