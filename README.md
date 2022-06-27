@@ -20,7 +20,7 @@ brew install boost
 cmake ..
 cmake --build .
 ```
-It is to be noted that a difference in CPU architecture or recent MAC OS may impact the building process. It may generate errors as shown below such as ![alt text](https://user-images.githubusercontent.com/85082930/172899138-4d8c3517-6aa8-4962-9743-6eaabe861f45.png.png)
+It is to be noted that a difference in CPU architecture or recent MAC OS may impact the building process. It may generate errors as shown below such as ![alt text](https://user-images.githubusercontent.com/85082930/172899138-4d8c3517-6aa8-4962-9743-6eaabe861f45.png)
 
 This issue can be resolved by following the the directions detailed [here](https://github.com/NeuralNetworkVerification/Marabou/issues/570).
 ## Structure of Marabou 
