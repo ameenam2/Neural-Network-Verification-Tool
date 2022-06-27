@@ -21,7 +21,7 @@ cmake ..
 cmake --build .
 ```
 It is to be noted that a difference in CPU architecture or recent MAC OS may impact the building process. It may generate errors as shown below such as .
-This issuse can be resolved by following the the directions detailed [here](https://github.com/NeuralNetworkVerification/Marabou/issues/570).
+This issue can be resolved by following the the directions detailed [here](https://github.com/NeuralNetworkVerification/Marabou/issues/570).
 ## Structure of Marabou 
 
 ## Command Interface of Marabou
