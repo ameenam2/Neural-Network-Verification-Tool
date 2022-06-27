@@ -31,4 +31,9 @@ This issue can be resolved by following the the directions detailed [here](https
 ## Command Interface of Marabou
 
 ## References
-
+https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
+https://arxiv.org/pdf/2004.08440.pdf
+https://aisafety.stanford.edu/marabou/MarabouCAV2019.pdf
+https://arxiv.org/pdf/1412.6572.pdf
+https://www.v7labs.com/blog/train-validation-test-set
+https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7
