@@ -5,10 +5,17 @@ Deep learning, a subfield of machine learning, imitates the  brain's use of neur
 ## Adversial Examples and Previous Methods of Verification of Neural Networks 
 In machine learning, A techinque named Train-Valid-Test is often used to evaluate the performance of machine learning models. To test a model, there will be a dataset for training, another dataset for validation, and another datset for testing. The training set , which should be diverse in terms of inputs, is used so the model can be trained to learn distinct features and patterns of the set. The validation set is used to validate whether the model's perfomancw while tuning the model's hyperparameters and configurations. The Testing set is the set used to determine if the model is robust because it gives unbiased evaluation of the performance in terms of accuracy and precision.  
 
-Deep Neural Networks are vulnerable to ** adversarial perturbations/examples ** which are inputs formed by applying small pertubations to examples from the dataset cause the model to output an incorrect answer with high confidence. 
-## Installation Instructions for MAC OS
-To
+Deep Neural Networks are vulnerable to **adversarial perturbations/examples** which are inputs formed by applying small pertubations to examples from the dataset that the cause the model to output an incorrect answer with high confidence. It is be noted that this phenomenon is often attributed linear behavior in high-dimensional space. As a result, the need for certifying the robustness of neural networks has led to the the development of multiples tools designed for the verification of Neural Networks. The use of Satisfiability Modulo Theories (SMT) solvers to verify neural networks proved to effective yet can be limited in terms of scalability as it only worked with small networks with tens of nodes. As a result, the development of tools such as Reluplux and Marabou focus on brigding the problem of scalilbity by allowing the testing of larger networks with hundred or a few thousand of nodes. Marabou, a recent SMT-based verification tools, expands on the tool Reluplux by adding features such as extension of multiple interfaces for feeding queries into a solver, accomodation of piecewise-linear activation functions, and a complete simplex-based linear programming core. 
+## Marabou 
 
+## Installation Instructions for MAC OS
+To build Marabou on MAC OS Terminal, Download [CMAKE](https://cmake.org/download/) 3.12 or later.
+Then, follow the following commands
+```
+git clone https://github.com/NeuralNetworkVerification/Marabou.git
+cd 
+ 
+```
 ## Structure of Marabou 
 
 ## Command Interface of Marabou
