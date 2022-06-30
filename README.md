@@ -1,4 +1,4 @@
-# New Methods  of 
+# New Methods  of Verifying Neural Networks
 
 ## Introduction
 Deep learning, a subfield of machine learning, imitates the  brain's use of neural network in order to mimic how humans think and learn. In deep learning, the structural building block of deep learning can be referred to as a Perceptron(aka a single layer neural network). A perceptron is comprised of 4 parts: An Input (A input layer/ Input Values), Weight and Bias, The Weighted Sum, and an Activication Function. First, all inputs are multiplied by their weights (internal parameters that impact how a particular input figures into the result). The weighted sum is then added to a bias value that is meant to increase the accurarcy of a particular model. Then, the results is then applied to a activation function. An activation is critical to the perceptron because it introduces non-linearities in a neural network. The result of the activation function is the perceptron's output. Moreover, a deep neural network is a neural network with multiple layers, which are refered to as hidden layers, between the input layer and the output layer. 
