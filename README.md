@@ -23,7 +23,7 @@ Marabou, the SMT verification verification, operates by answrring queries about 
 
 
 ### Verification of Neural Networks
-When verifying a neural network, the problem comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P<sub>in ⇒P<sub>out ,where P<sub>in denotes a formula over N's inputs and ⇒P<sub>out denotes a formula over N's outputs. Typically, P<sub>in defines an input region **I**, and P states that ⇒P<sub>out holds for the output layer at each point in **I**. A verification tool will try to find a counter-example to this query: an input point **I** in **I** such that when applied to **N**, ⇒P<sub>out is false over the resulting outputs. **P** is true only if no such counter-example exists.
+When verifying a neural network, the problem comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P<sub>in ⇒ P<sub>out ,where P<sub>in denotes a formula over N's inputs and ⇒P<sub>out denotes a formula over N's outputs. Typically, P<sub>in defines an input region **I**, and P states that ⇒P<sub>out holds for the output layer at each point in **I**. A verification tool will try to find a counter-example to this query: an input point **I** in **I** such that when applied to **N**, ⇒P<sub>out is false over the resulting outputs. **P** is true only if no such counter-example exists.
 
 For more information, check out the following links
 - [Marabou Github](https://github.com/NeuralNetworkVerification/Marabou) 
@@ -44,8 +44,6 @@ cmake --build .
 It is to be noted that a difference in CPU architecture or recent MAC OS updates may impact the building process. It may generate errors as shown below ![alt text](https://user-images.githubusercontent.com/85082930/172899138-4d8c3517-6aa8-4962-9743-6eaabe861f45.png)
 
 This issue can be resolved by following the the directions detailed [here](https://github.com/NeuralNetworkVerification/Marabou/issues/570).
-## Structure of Marabou 
-
 ## Command Interface of Marabou
 
 ## References
