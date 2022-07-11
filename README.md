@@ -19,11 +19,11 @@ ONNX is a intermediary machine learning framework that alllows conversion betwee
    - Graph Name
 
 ## Marabou 
-Marabou, the SMT verification verification, operates by answring queries about a network's properties by translating the queries into constraint satsification problems. 
+Marabou, the SMT verification verification, operates by answrring queries about a network's properties by translating the queries into constraint satsification problems.
 
 
 ### Verification of Neural Networks
-
+When verifying a neural network, the problem comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P <sub>in  ⇒ Pout, 
 
 For more information, check out the following links
 - [Marabou Github](https://github.com/NeuralNetworkVerification/Marabou) 
