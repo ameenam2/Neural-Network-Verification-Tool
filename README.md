@@ -65,3 +65,4 @@ As mentioned previously, to make a verfification query in Marabou, two parts are
 - https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7
 - https://www.microsoft.com/en-us/research/video/onnx-and-onnx-runtime/
 - https://static.linaro.org/connect/san19/presentations/san19-211.pdf
+- https://github.com/NeuralNetworkVerification/Marabou.
