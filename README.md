@@ -23,7 +23,7 @@ Marabou, the SMT verification verification, operates by answrring queries about 
 
 
 ### Verification of Neural Networks
-When verifying a neural network, the problem comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P<sub>in</sub> ⇒ PP<sub>out</sub> ,where P<sub>in</sub> denotes a formula over N's inputs and P<sub>out</sub> denotes a formula over N's outputs. Typically, P<sub>in</sub> defines an input region **I**, and P states that ⇒P<sub>out holds for the output layer at each point in **I**. A verification tool will try to find a counter-example to this query: an input point **I** in **I** such that when applied to **N**, P<sub>out</sub> is false over the resulting outputs. **P** is true only if no such counter-example exists.
+When verifying a neural network, the problem comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P<sub>in</sub> ⇒ PP<sub>out</sub> ,where P<sub>in</sub> denotes a formula over N's inputs and P<sub>out</sub> denotes a formula over N's outputs. Typically, P<sub>in</sub> defines an input region **I**, and P states that P<sub>out</sub> holds for the output layer at each point in **I**. A verification tool will try to find a counter-example to this query: an input point **I** in **I** such that when applied to **N**, P<sub>out</sub> is false over the resulting outputs. **P** is true only if no such counter-example exists.
 
 For more information, check out the following links
 - [Marabou Github](https://github.com/NeuralNetworkVerification/Marabou) 
