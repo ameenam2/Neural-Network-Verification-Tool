@@ -23,7 +23,7 @@ Marabou, the SMT verification verification, operates by answrring queries about 
 
 
 ### Verification of Neural Networks
-When verifying a neural network, the problem comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P<sub>in ⇒ P
+When verifying a neural network, the problem comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P<sub>in</sub> ⇒ P
 
 For more information, check out the following links
 - [Marabou Github](https://github.com/NeuralNetworkVerification/Marabou) 
