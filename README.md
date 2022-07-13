@@ -1,7 +1,7 @@
 # New Methods  of Verifying Neural Networks
 
 ## Introduction
-Deep learning, a subfield of machine learning, imitates the  brain's use of neural network in order to mimic how humans think and learn. In deep learning, the structural building block of deep learning can be referred to as a Perceptron(aka a single layer neural network). A perceptron is comprised of 4 parts: An Input (A input layer/ Input Values), Weight and Bias, The Weighted Sum, and an Activication Function. First, all inputs are multiplied by their weights (internal parameters that impact how a particular input figures into the result). The weighted sum is then added to a bias value that is meant to increase the accurarcy of a particular model. Then, the results is then applied to a activation function. An activation is critical to the perceptron because it introduces non-linearities in a neural network. The result of the activation function is the perceptron's output. Moreover, a deep neural network is a neural network with multiple layers, which are refered to as hidden layers, between the input layer and the output layer. 
+Deep learning, a subfield of machine learning, imitates the  brain's use of neural network in order to mimic how humans think and learn. In deep learning, the structural building block of deep learning can be referred to as a Perceptron(aka a single layer neural network). A perceptron is comprised of 4 parts: An Input (A input layer/ Input Values), Weight and Bias, The Weighted Sum, and an Activication Function. First, all inputs are multiplied by their weights (internal parameters that impact how a particular input figures into the result). The weighted sum is then added to a bias value that is meant to increase the accurarcy of a particular model. Then, the results is then applied to a activation function. An activation function is critical to the perceptron because it introduces non-linearities in a neural network. The result of the activation function is the perceptron's output. Moreover, a deep neural network is a neural network with multiple layers, which are refered to as hidden layers, between the input layer and the output layer. 
 ## Adversial Examples and Previous Methods of Verification of Neural Networks 
 In machine learning, A techinque named Train-Valid-Test is often used to evaluate the performance of machine learning models. To test a model, there will be a dataset for training, another dataset for validation, and another datset for testing. The training set , which should be diverse in terms of inputs, is used so the model can be trained to learn distinct features and patterns of the set. The validation set is used to validate whether the model's perfomance while tuning the model's hyperparameters and configurations. The Testing set is the set used to determine if the model is robust because it gives unbiased evaluation of the performance in terms of accuracy and precision.  
 
@@ -30,7 +30,7 @@ For more information, check out the following links
 - [Marabou Paper](https://aisafety.stanford.edu/marabou/MarabouCAV2019.pdf) 
 - [Marabou Documentation](https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html) 
 ## Installation Instructions for MAC OS
-To build Marabou on MAC OS Terminal, Download [CMAKE](https://cmake.org/download/) 3.12 or later.
+To build Marabou on MAC OS Terminal, Download [CMAKE](https://cmake.org/download/) 3.12 or later. Also, Download [Homebrew]](https://phoenixnap.com/kb/install-homebrew-on-mac)
 Then, use the following commands
 ```
 git clone https://github.com/NeuralNetworkVerification/Marabou.git
@@ -63,3 +63,4 @@ As mentioned previously, to make a verfification query in Marabou, two parts are
 - https://www.v7labs.com/blog/train-validation-test-set
 - https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7
 - https://www.microsoft.com/en-us/research/video/onnx-and-onnx-runtime/
+- https://static.linaro.org/connect/san19/presentations/san19-211.pdf
