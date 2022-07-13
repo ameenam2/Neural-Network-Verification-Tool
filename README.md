@@ -30,7 +30,8 @@ For more information, check out the following links
 - [Marabou Paper](https://aisafety.stanford.edu/marabou/MarabouCAV2019.pdf) 
 - [Marabou Documentation](https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html) 
 ## Installation Instructions for MAC OS
-To build Marabou on MAC OS Terminal, Download [CMAKE](https://cmake.org/download/) 3.12 or later. Also, Download [Homebrew](https://phoenixnap.com/kb/install-homebrew-on-mac)
+To build Marabou on MAC OS Terminal, Download [CMAKE](https://cmake.org/download/) 3.12 or later. Also, Download [Homebrew](https://phoenixnap.com/kb/install-homebrew-on-mac).
+
 Then, use the following commands
 ```
 git clone https://github.com/NeuralNetworkVerification/Marabou.git
