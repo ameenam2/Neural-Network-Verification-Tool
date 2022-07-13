@@ -45,6 +45,7 @@ It is to be noted that a difference in CPU architecture or recent MAC OS updates
 
 This issue can be resolved by following the the directions detailed [here](https://github.com/NeuralNetworkVerification/Marabou/issues/570).
 ## Command Interface of Marabou
+As mentioned previously, to make a verfification query in Marabou, two 
 
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
