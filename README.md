@@ -9,7 +9,12 @@ In machine learning, a technique named Train-Valid-Test is often used to evaluat
 Deep Neural Networks are vulnerable to adversarial perturbations/examples which are inputs formed by applying small perturbations to examples from the dataset that the cause the model to output an incorrect answer with high confidence. It should be noted that this phenomenon is often attributed to linear behavior in high-dimensional space. As a result, the need for certifying the robustness of neural networks has led to the the development of multiples tools designed for the verification of Neural Networks. The use of Satisfiability Modulo Theories (SMT) solvers to verify neural networks proved to be effective, yet could be limited in terms of scalability as it only worked with small networks with tens of nodes. As a result, the development of tools such as Reluplux and Marabou focus on brigding the problem of scalability by allowing the testing of larger networks with hundred or a few thousand of nodes. Marabou, a recent SMT-based verification tool, expands on the tool Reluplux by adding features such as extension of multiple interfaces for feeding queries into a solver, accommodation of piecewise-linear activation functions, and a complete simplex-based linear programming core.
 ## Open Neural Network Exchange (ONNX) for  Machine Learning Models
 Open Neural Network Exchange(ONNX) is an intermediary machine learning framework that allows conversion between different machine learning frameworks. These machine learning frameworks consist of an interface that makes it simpler and faster for developers to create and deploy machine learning models. Prior to ONNX, conversion of machine learning models from one framework to another was extremely difficult.
-### Onnx File Format
+## ONNX Key Design
+- Allow for Deep Neural Network as well as traditional Machine Learning Models.
+- Adaptable enough to keep up with rapid advances.
+- Compact and cross-platform representation for serialization.
+- A standardized list of well-defined operators based on real-world usage.
+## ONNX File Format
 - Model
   - Version Info 
   - MetaData
@@ -18,7 +23,6 @@ Open Neural Network Exchange(ONNX) is an intermediary machine learning framework
    - Inputs and Outputs
    - List of Computational Nodes
    - Graph Name
-
 ## Marabou 
 Marabou, the SMT verification verification, operates by answering queries about a network's properties by translating the queries into constraint satsification problems.
 
