@@ -51,10 +51,10 @@ It is to be noted that a difference in CPU architecture or recent MAC OS updates
 
 This issue can be resolved by following the the directions detailed [here](https://github.com/NeuralNetworkVerification/Marabou/issues/570).
 ## Command Interface of Marabou
-As mentioned previously, to make a verfification query in Marabou, two parts are needed: a neural network and a property to verify. Depending on the format of the neural network, Marabou will work differently
+As mentioned previously, to make a verification query in Marabou, two parts are needed: a neural network and a property to verify. Depending on the format of the neural network, Marabou will work differently from the command line and the .
 
 ### NNET Format 
-To make a query for a DNN in the nnet format in Marabou, a 
+To make a query for a DNN in the nnet format in Marabou, 
 
 
 
