@@ -23,7 +23,10 @@ Open Neural Network Exchange(ONNX) is an intermediary machine learning framework
    - List of Computational Nodes
    - Graph Name
 ## Marabou 
-Marabou, the SMT verification tool, operates by answering queries about a network's properties by translating the queries into constraint satisfication problems.
+Marabou, the SMT verification tool, operates by answering queries about a network's properties by translating the queries into constraint satisfication problems. Marabou can respond to the following types of verification queries: 
+Reachability queries: if inputs is in a given range is the output guaranteed to be in some, typically safe, range.
+Robustness queries: test whether there exist adversarial points around a given input point that change the output of the network.
+
 ### Verification of Neural Networks
 When verifying a neural network, the query comprises of 2 parts: the neural network **N** and the property **P**. The Property **P** is in the form of P<sub>in</sub> ⇒ P<sub>out</sub>, where P<sub>in</sub> denotes a formula over N's inputs and P<sub>out</sub> denotes a formula over N's outputs. Typically, P<sub>in</sub> defines an input region I, and P states that P<sub>out</sub> holds for the output layer at each point in I. A verification tool will try to find a counter-example to this query: an input point I in I such that when applied to N, P<sub>out</sub> is false over the resulting outputs. P is true only if no such counter-example exists.
 
