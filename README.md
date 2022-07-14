@@ -86,6 +86,8 @@ Then, run the following command:
 source ~/.bash_profile
 ```
 ## Running an ONNX Example on Jupyter Notebook
+Using the ONNX Example on the [Marabou Documentation] (https://neuralnetworkverification.github.io/Marabou/Examples/2_ONNXExample.html) to run a demonstration, 
+
 
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
