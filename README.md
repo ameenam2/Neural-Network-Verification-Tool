@@ -81,7 +81,7 @@ export PYTHONPATH
 JUPYTER_PATH="/path/to/Marabou"
 export JUPYTER_PATH
 ```
-Then, run thr following command:
+Then, run the following command:
 ```
 source ~/.bash_profile
 ```
