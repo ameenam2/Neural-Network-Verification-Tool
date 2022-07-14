@@ -54,10 +54,7 @@ This issue can be resolved by following the the directions detailed [here](https
 As mentioned previously, to make a verification query in Marabou, two parts are needed: a neural network and a property to verify. Depending on the format of the neural network, Marabou will work differently from the command line and the Python API.
 
 ### NNET Format 
-To make a query for a DNN in the nnet format in Marabou, the properties can specified using inequalities over the input and output in a .txt file:
-
-
-
+To make a query for a DNN in the nnet format in Marabou, the properties can specified using inequalities over the input and output in a [.txt](https://github.com/NeuralNetworkVerification/Marabou/wiki/Marabou-Input-Formats) file:
 
 To run the Marabou analysis from the command line on MAC OS,
 ```
@@ -69,7 +66,8 @@ cd path/to/marabou/repo/folder
 ```
 
 
-### ONNX Format 
+### ONNX Format
+
 
 
 
