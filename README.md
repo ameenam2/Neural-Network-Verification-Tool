@@ -67,7 +67,8 @@ cd path/to/marabou/repo/folder
 
 
 ### ONNX Format
-To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API] (https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81): 
+To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81) :
+
 
 
 
