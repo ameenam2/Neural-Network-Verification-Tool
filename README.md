@@ -70,10 +70,21 @@ cd path/to/marabou/repo/folder
 To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81) :
 
 To run from the python script, one must export the Python and Jupyter paths using 
-
-
-
-
+Run the following command: 
+```
+sudo nano ~/.bash_profile
+```
+Copy the following into the nano file: 
+```
+PYTHONPATH="/path/to/Marabou"
+export PYTHONPATH
+JUPYTER_PATH="/path/to/Marabou"
+export JUPYTER_PATH
+```
+Then, run thr following command:
+```
+source ~/.bash_profile
+```
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
 - https://arxiv.org/pdf/2004.08440.pdf
