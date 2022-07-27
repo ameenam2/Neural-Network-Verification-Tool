@@ -70,7 +70,7 @@ cd path/to/marabou/repo/folder
 ```
 
 
-### ONNX Format
+#### Marabou PY- The Python Interface of Marabou 
 To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81) :
 
 To run from the python script, one must export the Python and Jupyter paths using 
@@ -89,10 +89,33 @@ Then, run the following command:
 ```
 source ~/.bash_profile
 ```
-## Running an ONNX Example on Jupyter Notebook
-Using the ONNX Example on the [Marabou Documentation](https://neuralnetworkverification.github.io/Marabou/Examples/2_ONNXExample.html) to run a demonstration, 
+To properly install the Python Interface of Marabou on MAC OS, follow the following steps:
+```
+git clone https://github.com/NeuralNetworkVerification/Marabou.git
+cd path/to/marabou/repo/folder
+mkdir build 
+cd build 
+cmake .. -DBUILD_PYTHON=ON
+cmake --build .
+```
+To ensure that you correctly build Marabou using the correct path to Python,
+```
+which python
+** copy the path/to/python
+cmake .. -DBUILD_PYTHON=ON -DPYTHON_EXECUTABLE=path/to/python
+```
+Also, make sure to export the PYTHON and JUPYTER PATHS as shown  above.
+## Testing from the Marabou Python Interface
 
+```
+pip install pytest numpy
+pip install tensorflow
+pip install onnx onnxruntime
+pip install -r maraboupy/test_requirements.txt
+python -m pytest test
+python -m pytest test/test_nnet.py
 
+```
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
 - https://arxiv.org/pdf/2004.08440.pdf
