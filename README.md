@@ -68,7 +68,7 @@ cd path/to/marabou/repo/folder
 ```
 ./build/Marabou resources/nnet/acasxu/ACASXU_experimental_v2a_2_7.nnet resources/properties/acas_property_3.txt
 ```
-
+Make sure to place both files in the resource folder located in the Marabou directory
 
 #### Marabou PY- The Python Interface of Marabou 
 To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81) :
