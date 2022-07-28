@@ -120,6 +120,40 @@ python -m pytest test               ## command to test the build
 python -m pytest test/test_nnet.py ##format: python -m pytest test/name_of_pythonfile.py
 
 ```
+## Errors while Testing
+When testing a python script using the command "python -m pytest test/test_nnet.py",
+one may have errors as below shown: 
+==================================== ERRORS ====================================
+______________________ ERROR collecting test/test_nnet.py ______________________
+ImportError while importing test module '/Users/ameenamohammed/Marabou/maraboupy/test/test_nnet.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+test/test_nnet.py:9: in <module>
+    from .. import Marabou
+Marabou.py:17: in <module>
+    from maraboupy.MarabouCore import *
+E   ImportError: No module named MarabouCore
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.04 seconds ============================```
+```
+```
+==================================== ERRORS ====================================
+______________________ ERROR collecting test/test_nnet.py ______________________
+ImportError while importing test module '/Users/ameenamohammed/Marabou/maraboupy/test/test_nnet.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+test/test_nnet.py:9: in 
+from .. import Marabou
+Marabou.py:17: in 
+from maraboupy.MarabouCore import *
+E ImportError: dlopen(/Users/ameenamohammed/Marabou/maraboupy/MarabouCore.cpython-39-darwin.so, 0x0002): tried: '/Users/ameenamohammed/Marabou/maraboupy/MarabouCore.cpython-39-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
+=========================== short test summary info ============================
+ERROR test/test_nnet.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.07s ===============================
+
+
+```
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
 - https://arxiv.org/pdf/2004.08440.pdf
