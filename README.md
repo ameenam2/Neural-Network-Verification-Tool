@@ -70,7 +70,7 @@ cd path/to/marabou/repo/folder
 ```
 Make sure to place both files in the resource folder located in the Marabou directory
 
-## MarabouPY- The Python Interface of Marabou 
+## Maraboupy- The Python Interface of Marabou 
 To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81) :
 
 To run from the python script, one must export the Python and Jupyter paths using 
