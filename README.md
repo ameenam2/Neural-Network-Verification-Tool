@@ -70,7 +70,7 @@ cd path/to/marabou/repo/folder
 ```
 Make sure to place both files in the resource folder located in the Marabou directory
 
-#### Marabou PY- The Python Interface of Marabou 
+## Marabou PY- The Python Interface of Marabou 
 To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81) :
 
 To run from the python script, one must export the Python and Jupyter paths using 
@@ -108,12 +108,16 @@ Also, make sure to export the PYTHON and JUPYTER PATHS as shown  above.
 ## Testing from the Marabou Python Interface
 
 ```
-pip install pytest numpy
-pip install tensorflow
-pip install onnx onnxruntime
-pip install -r maraboupy/test_requirements.txt
-python -m pytest test
-python -m pytest test/test_nnet.py
+pip install pytest numpy ## Make sure pytest and numpy are both downloaded 
+```
+From the Marabou root directory, run the following command to install all other packages to 
+```
+pip install -r maraboupy/test_requirements.txt ##To download all the packages to make Marabou efficiently run
+```
+To test a file, place the python script in the Marabou/maraboupy/test folder and run the following command 
+```
+python -m pytest test               ## command to test the build 
+python -m pytest test/test_nnet.py ##format: python -m pytest test/name_of_pythonfile.py
 
 ```
 ## References
