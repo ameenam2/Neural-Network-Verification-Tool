@@ -9,7 +9,7 @@ Deep Neural Networks are vulnerable to adversarial perturbations/examples which 
 ## Netron: Neural Network Visualization Tools
 Due to the black-box nature and the complexities of neural networks, it is hard for human to visualize and conceptualize the neural networks. Using the visualization tools such as [Netron](https://github.com/lutzroeder/netron), one can visualize and conceptualize the deep learning networks.
 ## Visualization OF A Deep Learning Model
-Using the an [ONNX Model](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/onnx/fc1.onnx) given in the Marbou Directory, One can see the graphical representation of an ONNX Model. 
+Using the an [ONNX Model](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/onnx/fc1.onnx) given in the Marabou Directory, One can see the graphical representation of an ONNX Model. 
 ## Open Neural Network Exchange (ONNX) for  Machine Learning Models
 Open Neural Network Exchange(ONNX) is an intermediary machine learning framework that allows conversion between different machine learning frameworks. These machine learning frameworks consist of an interface that makes it simpler and faster for developers to create and deploy machine learning models. Prior to ONNX, conversion of machine learning models from one framework to another was extremely difficult.
 ## ONNX Key Design Principles
@@ -70,7 +70,7 @@ cd path/to/marabou/repo/folder
 ```
 Make sure to place both files in the resource folder located in the Marabou directory
 
-## Marabou PY- The Python Interface of Marabou 
+## MarabouPY- The Python Interface of Marabou 
 To make a query for a DNN in the onnx format in Marabou, the properties can be specified through the [Python API](https://github.com/NeuralNetworkVerification/Marabou/blob/master/resources/runMarabou.py#L80-L81) :
 
 To run from the python script, one must export the Python and Jupyter paths using 
@@ -123,6 +123,7 @@ python -m pytest test/test_nnet.py ##format: python -m pytest test/name_of_pytho
 ## Errors while Testing
 When testing a python script using the command "python -m pytest test/test_nnet.py",
 one may have errors as below shown: 
+```
 ==================================== ERRORS ====================================
 ______________________ ERROR collecting test/test_nnet.py ______________________
 ImportError while importing test module '/Users/ameenamohammed/Marabou/maraboupy/test/test_nnet.py'.
@@ -134,7 +135,7 @@ Marabou.py:17: in <module>
     from maraboupy.MarabouCore import *
 E   ImportError: No module named MarabouCore
 !!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
-=========================== 1 error in 0.04 seconds ============================```
+=========================== 1 error in 0.04 seconds ============================
 ```
 ```
 ==================================== ERRORS ====================================
@@ -151,9 +152,10 @@ E ImportError: dlopen(/Users/ameenamohammed/Marabou/maraboupy/MarabouCore.cpytho
 ERROR test/test_nnet.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
 =============================== 1 error in 0.07s ===============================
-
-
 ```
+
+
+
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
 - https://arxiv.org/pdf/2004.08440.pdf
