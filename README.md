@@ -176,7 +176,8 @@ To switch from TXT to ONNX file,
 ```
 protoc --encode onnx.ModelProto onnx.proto < name_of_the_txt_file.txt > name_of_the_onnx_file.onnx
 ```
-
+As of 2022, this method does notseem to work. However, Onnx uses ONNX.PROTO to define an onnx model. Specifically, the moduleonnx.ModelProto is a top-level file/container format for bundling a ML models.
+// associating its computation graph with metadata
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
 - https://arxiv.org/pdf/2004.08440.pdf
