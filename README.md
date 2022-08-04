@@ -153,8 +153,11 @@ ERROR test/test_nnet.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
 =============================== 1 error in 0.07s ===============================
 ```
-To resolve this issue, 
+# Switch from ONNX to .TXT file
+To switch from an ONNX to .TXT,
+'''
 
+'''
 
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
