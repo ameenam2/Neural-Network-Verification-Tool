@@ -137,7 +137,7 @@ E   ImportError: No module named MarabouCore
 !!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
 =========================== 1 error in 0.04 seconds ============================
 ```
-To resolve this issue, It seems that the root of this issue is at the fact 
+To resolve this issue, It seems that the root of this issue is at the fact that Marabou hasn't been build completely. To resolve this isssue, rebuild Marabou using this 
 
 # Switch from ONNX to .TXT file
 To switch from an ONNX to .TXT, follow the following commands
@@ -162,8 +162,7 @@ To switch from TXT to ONNX file,
 ```
 protoc --encode onnx.ModelProto onnx.proto < name_of_the_txt_file.txt > name_of_the_onnx_file.onnx
 ```
-As of 2022, this method does not seem to work. However, Onnx uses ONNX.PROTO to define an onnx model. Specifically, the moduleonnx.ModelProto is a top-container format for bundling ML models.
-// associating its computation graph with metadata
+As of 2022, this method does not seem to work. However, Onnx uses ONNX.PROTO to define an onnx model. Specifically, the moduleonnx.ModelProto is a top-container format for bundling ML models. associating its computation graph with metadata
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
 - https://arxiv.org/pdf/2004.08440.pdf
@@ -173,4 +172,5 @@ As of 2022, this method does not seem to work. However, Onnx uses ONNX.PROTO to 
 - https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7
 - https://www.microsoft.com/en-us/research/video/onnx-and-onnx-runtime/
 - https://static.linaro.org/connect/san19/presentations/san19-211.pdf
-- https://github.com/NeuralNetworkVerification/Marabou.
+- https://github.com/NeuralNetworkVerification/Marabou
+- 
