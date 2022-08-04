@@ -107,11 +107,11 @@ Example - cmake .. -DBUILD_PYTHON=ON -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
 Also, make sure to export the PYTHON and JUPYTER PATHS as shown above.
 ## Testing from the Marabou Python Interface
-
+Make sure pytest and numpy are both downloaded 
 ```
-pip install pytest numpy ## Make sure pytest and numpy are both downloaded 
+pip install pytest numpy 
 ```
-From the Marabou root directory, run the following command to install all other packages to 
+From the Marabou root directory, run the following command to install all other packages to run Marabou sucessfully
 ```
 pip install -r maraboupy/test_requirements.txt ##To download all the packages to make Marabou efficiently run
 ```
@@ -119,7 +119,14 @@ To test a file, place the python script in the Marabou/maraboupy/test folder and
 ```
 python -m pytest test  / python3 -m pytest test                # command to test the build 
 python -m pytest test/test_nnet.py / python3 -m pytest test/test_nnet.py  #format: python -m pytest test/name_of_pythonfile.py
-
+```
+The python command can be python or python3 depending on the version of python installed.
+## Verifying a Neural Network
+To verify a neural network in these formats (.onnx,.pb,and .nnet), one must run a python script. 
+The python script should follow the format of the examples listed on this page. 
+To run the script, use the command 
+```
+python name_of_script.py /  python3 name_of_script.py
 ```
 ## Errors while Testing
 When testing a python script using the command "python -m pytest test/test_nnet.py",
