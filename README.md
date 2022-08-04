@@ -137,22 +137,8 @@ E   ImportError: No module named MarabouCore
 !!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
 =========================== 1 error in 0.04 seconds ============================
 ```
-```
-==================================== ERRORS ====================================
-______________________ ERROR collecting test/test_nnet.py ______________________
-ImportError while importing test module '/Users/ameenamohammed/Marabou/maraboupy/test/test_nnet.py'.
-Hint: make sure your test modules/packages have valid Python names.
-Traceback:
-test/test_nnet.py:9: in 
-from .. import Marabou
-Marabou.py:17: in 
-from maraboupy.MarabouCore import *
-E ImportError: dlopen(/Users/ameenamohammed/Marabou/maraboupy/MarabouCore.cpython-39-darwin.so, 0x0002): tried: '/Users/ameenamohammed/Marabou/maraboupy/MarabouCore.cpython-39-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
-=========================== short test summary info ============================
-ERROR test/test_nnet.py
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.07s ===============================
-```
+To resolve this issue, It seems that the root of this issue is at the fact 
+
 # Switch from ONNX to .TXT file
 To switch from an ONNX to .TXT, follow the following commands
 1. Download Protobutuf Buffers
@@ -176,7 +162,7 @@ To switch from TXT to ONNX file,
 ```
 protoc --encode onnx.ModelProto onnx.proto < name_of_the_txt_file.txt > name_of_the_onnx_file.onnx
 ```
-As of 2022, this method does notseem to work. However, Onnx uses ONNX.PROTO to define an onnx model. Specifically, the moduleonnx.ModelProto is a top-container format for bundling a ML models.
+As of 2022, this method does not seem to work. However, Onnx uses ONNX.PROTO to define an onnx model. Specifically, the moduleonnx.ModelProto is a top-container format for bundling ML models.
 // associating its computation graph with metadata
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
