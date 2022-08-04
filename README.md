@@ -170,11 +170,11 @@ curl 'https://github.com/onnx/onnx/blob/main/onnx/onnx.proto' > onnx.proto
 3. Use these commands 
 To switch from ONNX to TXT file, 
 ```
-protoc --decode onnx.ModelProto onnx.proto < SrcBinaryFile.onnx > DstTextFile.txt
+protoc --decode onnx.ModelProto onnx.proto < name_of_the_onnx_file.onnx > name_of_the_txt_file.txt
 ```
 To switch from TXT to ONNX file, 
 ```
-protoc --encode onnx.ModelProto onnx.proto < SrcTextFile.txt > DstBinaryFile.onnx
+protoc --encode onnx.ModelProto onnx.proto < name_of_the_txt_file.txt > name_of_the_onnx_file.onnx
 ```
 
 ## References
