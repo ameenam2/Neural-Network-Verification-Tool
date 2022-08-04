@@ -95,16 +95,17 @@ git clone https://github.com/NeuralNetworkVerification/Marabou.git
 cd path/to/marabou/repo/folder
 mkdir build 
 cd build 
-cmake .. -DBUILD_PYTHON=ON
+cmake .. -DBUILD_PYTHON=ON -DPYTHON_EXECUTABLE=/path/to/python
 cmake --build .
 ```
 To ensure that you correctly build Marabou using the correct path to Python,
 ```
-which python
+which python / which python3
 ** copy the path/to/python
-cmake .. -DBUILD_PYTHON=ON -DPYTHON_EXECUTABLE=path/to/python
+cmake .. -DBUILD_PYTHON=ON -DPYTHON_EXECUTABLE=path/to/python  # use this command instead of cmake .. -DBUILD_PYTHON=ON
+Example - cmake .. -DBUILD_PYTHON=ON -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
-Also, make sure to export the PYTHON and JUPYTER PATHS as shown  above.
+Also, make sure to export the PYTHON and JUPYTER PATHS as shown above.
 ## Testing from the Marabou Python Interface
 
 ```
@@ -116,8 +117,8 @@ pip install -r maraboupy/test_requirements.txt ##To download all the packages to
 ```
 To test a file, place the python script in the Marabou/maraboupy/test folder and run the following command 
 ```
-python -m pytest test               ## command to test the build 
-python -m pytest test/test_nnet.py ##format: python -m pytest test/name_of_pythonfile.py
+python -m pytest test  / python3 -m pytest test                ## command to test the build 
+python -m pytest test/test_nnet.py / python3 -m pytest test/test_nnet.py  ##format: python -m pytest test/name_of_pythonfile.py
 
 ```
 ## Errors while Testing
@@ -137,7 +138,7 @@ E   ImportError: No module named MarabouCore
 !!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
 =========================== 1 error in 0.04 seconds ============================
 ```
-To resolve this issue, It seems that the root of this issue is at the fact that Marabou hasn't been build completely. To resolve this isssue, rebuild Marabou using this 
+To resolve this issue, It seems that the root of this issue is at the fact that Marabou hasn't been build completely. To resolve this isssue, rebuild Marabou using this "command cmake --build ." and make sure that the output end with Marabou building 100% on your terminal. Also, make sure that you export the python path to the marabou repository as detailed above.
 
 # Switch from ONNX to .TXT file
 To switch from an ONNX to .TXT, follow the following commands
