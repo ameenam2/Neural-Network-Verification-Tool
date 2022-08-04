@@ -154,10 +154,28 @@ ERROR test/test_nnet.py
 =============================== 1 error in 0.07s ===============================
 ```
 # Switch from ONNX to .TXT file
-To switch from an ONNX to .TXT,
-'''
-
-'''
+To switch from an ONNX to .TXT, follow the following commands
+1. Download Protobutuf Buffers
+```
+sudo snap install curl
+curl -OL https://github.com/google/protobuf/releases/download/v3.15.8/$PROTOC_ZIP
+sudo unzip -o $PROTOC_ZIP -d /usr/local bin/protoc
+sudo unzip -o $PROTOC_ZIP -d /usr/local include/*
+rm -f $PROTOC_ZIP
+```
+2. Download ONNX.PROTO
+```
+curl 'https://github.com/onnx/onnx/blob/main/onnx/onnx.proto' > onnx.proto
+```
+3. Use these commands 
+To switch from ONNX to TXT file, 
+```
+protoc --decode onnx.ModelProto onnx.proto < SrcBinaryFile.onnx > DstTextFile.txt
+```
+To switch from TXT to ONNX file, 
+```
+protoc --encode onnx.ModelProto onnx.proto < SrcTextFile.txt > DstBinaryFile.onnx
+```
 
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
