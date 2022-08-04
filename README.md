@@ -117,8 +117,8 @@ pip install -r maraboupy/test_requirements.txt ##To download all the packages to
 ```
 To test a file, place the python script in the Marabou/maraboupy/test folder and run the following command 
 ```
-python -m pytest test  / python3 -m pytest test                ## command to test the build 
-python -m pytest test/test_nnet.py / python3 -m pytest test/test_nnet.py  ##format: python -m pytest test/name_of_pythonfile.py
+python -m pytest test  / python3 -m pytest test                # command to test the build 
+python -m pytest test/test_nnet.py / python3 -m pytest test/test_nnet.py  #format: python -m pytest test/name_of_pythonfile.py
 
 ```
 ## Errors while Testing
