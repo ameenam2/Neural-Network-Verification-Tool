@@ -123,7 +123,7 @@ python -m pytest test/test_nnet.py / python3 -m pytest test/test_nnet.py  #forma
 The python command can be python or python3 depending on the version of python installed.
 ## Verifying a Neural Network
 To verify a neural network in these formats (.onnx,.pb,and .nnet), one must run a python script. 
-The python script should follow the format of the examples listed on this page. 
+The python script should follow the format of the examples listed on this [page](https://neuralnetworkverification.github.io/Marabou/Examples/0_NNetExample.html).
 To run the script, use the command 
 ```
 python name_of_script.py /  python3 name_of_script.py
@@ -148,6 +148,7 @@ E   ImportError: No module named MarabouCore
 To resolve this issue, It seems that the root of this issue is at the fact that Marabou hasn't been build completely. To resolve this isssue, rebuild Marabou using this "command cmake --build ." and make sure that the output end with Marabou building 100% on your terminal. Also, make sure that you export the python path to the marabou repository as detailed above.
 
 # Switch from ONNX to .TXT file
+The onnx format is defined using Protobuf Buffers which is a binary data format that allows the reading and writing of  structured data to and from a variety of data streams and using a variety of languages.
 To switch from an ONNX to .TXT, follow the following commands
 1. Download Protobutuf Buffers
 ```
@@ -170,7 +171,7 @@ To switch from TXT to ONNX file,
 ```
 protoc --encode onnx.ModelProto onnx.proto < name_of_the_txt_file.txt > name_of_the_onnx_file.onnx
 ```
-As of 2022, this method does not seem to work. However, Onnx uses ONNX.PROTO to define an onnx model. Specifically, the moduleonnx.ModelProto is a top-container format for bundling ML models. associating its computation graph with metadata
+As of 2022, this method does not seem to work. However, Onnx uses ONNX.PROTO to define an onnx model. Specifically, the moduleonnx.ModelProto is a top-container format for bundling ML models associating its computation graph with metadata.
 ## References
 - https://neuralnetworkverification.github.io/Marabou/API/0_Marabou.html
 - https://arxiv.org/pdf/2004.08440.pdf
@@ -181,4 +182,5 @@ As of 2022, this method does not seem to work. However, Onnx uses ONNX.PROTO to 
 - https://www.microsoft.com/en-us/research/video/onnx-and-onnx-runtime/
 - https://static.linaro.org/connect/san19/presentations/san19-211.pdf
 - https://github.com/NeuralNetworkVerification/Marabou
-- 
+- https://zenn.dev/akiya_souken/articles/directly-edit-onnx-file-in-text-format_en
+- https://developers.google.com/protocol-buffers
